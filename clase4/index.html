@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,7 @@
 
 <body>
     <h1>CREAR CUENTA</h1>
-        <!--label y tilde ó con acute;-->
+    <!--label y tilde ó con acute;-->
     <fieldset>
         <legend>
             Informaci&oacute;n Personal
@@ -25,7 +26,7 @@
             <label>Dirección de email *</label>
             <input type="email" placeholder="xmail@xmail.com">
             <label>Nro de Documento *</label>
-        <!--SOLO NUMEROS-->
+            <!--SOLO NUMEROS-->
             <input type="number" placeholder="xxxxxxxx">
             <label>Edad</label>
             <input type="number" min="0" max="120">
@@ -41,7 +42,7 @@
             <span>NO</span>
             <input type="radio" name="casado" value="NO" checked>
             <br>
-            <label> Cantidad</label>   
+            <label> Cantidad</label>
             <select>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -52,44 +53,45 @@
     <fieldset>
         <legend>Form con tabla</legend>
         <form action="../clase3/index.html" method="POST">
-        <table>
-            <tr>
-                <td>
-                    <label>Nombre *</label>
-                    <input type="text" name="nombre">
-                </td>
-                <td>
-                    <label>Apellido *</label>
-                    <input type="text" name="apellido" placeholder="Montaño">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <label>Direccion de email *</label>
-                    <br>
-                    <input type="text" name="email" placeholder="xmail@xmail.com">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Nro de Documento *</label>
-                    <br>
-                    <input type="number" name="dni" placeholder="99999999">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="submit" value="GUARDAR">
-                </td>
-            </tr>
-        </table>
-    </form>
+            <table>
+                <tr>
+                    <td>
+                        <label>Nombre *</label>
+                        <input type="text" name="nombre">
+                    </td>
+                    <td>
+                        <label>Apellido *</label>
+                        <input type="text" name="apellido" placeholder="Montaño">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Direccion de email *</label>
+                        <br>
+                        <input type="text" name="email" placeholder="xmail@xmail.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Nro de Documento *</label>
+                        <br>
+                        <input type="number" name="dni" placeholder="99999999">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="GUARDAR">
+                    </td>
+                </tr>
+            </table>
+        </form>
     </fieldset>
 
-        <label>Adherirse al boletín de novedades</label>
-        <input type="checkbox" name="adh" value="SI" checked>
-        <input type="submit" value="ENVIAR">
+    <label>Adherirse al boletín de novedades</label>
+    <input type="checkbox" name="adh" value="SI" checked>
+    <input type="submit" value="ENVIAR">
     </form>
     <hr>
 </body>
+
 </html>
