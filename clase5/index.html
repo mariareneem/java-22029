@@ -15,7 +15,7 @@
                     <legend>
                         Alta de Usuario
                     </legend>
-                    <form action="AltaUsuario.html">
+                    <form action="AltaUsuario.html" method="GET">
                         <input type="file" name="DNI Frente" required>
                         <input type="hidden" value="valoroculto" name="campoHidden">
 
@@ -23,7 +23,39 @@
                         <input type="text" name="nombre" required placeholder="ingrese algo">
 
                         <input type="text" required pattern="[0-9]" placeholder="Valores entre 0 y 9">
+                        <br>
+                        <textarea name="info-extra" cols="50" rows="5"></textarea>
+                        <hr>
+
+                        <select multiple name="selectMultiple" required>
+                            <optgroup label="Animales">
+                                <option>León</option>
+                                <option>Tigre</option>
+                            </optgroup>
+                            <optgroup label="Colores">
+                                <option>Rojo</option>
+                                <option>Verde</option>
+                                <option>Azul</option>
+                            </optgroup>
+                        </select>
+                        <br>
+
+                        <input list="browser" name="databrowser">
+                        <datalist id="browser">
+                            <optioN>EDGE</option>
+                            <option>Chrome</option>
+                            <option>FireFox</option>
+                        </datalist>
+
+                        <br>
+                        <label for="buscar">Tipo search</label>
+                        <input type="search" name="buscar" id="buscar"/>
+                        <br>
+                        <label for="buscarText">Tipo text</label>
+                        <input type="text" name="buscarText"/>
+                        <br>
                         <input type="submit" value="Enviar">
+
                      </form>
                 </fieldset>
             </section>
