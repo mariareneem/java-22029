@@ -1,0 +1,31 @@
+/* 
+* {background-color: blue;
+}
+*/
+
+body {
+    background-color: aqua;
+}
+
+/*aplicar estilo por id*/
+#idsection{
+    background-color: blueviolet;
+}
+
+#nav {
+    background-color: beige;
+}
+
+/*estilo por clases, .<nombreDeLaClase>*/
+.links {
+    color: palevioletred;
+}
+
+/*selector de etiqueta*/
+a {
+    text-decoration: none;
+}
+
+#linkActive {
+    color: brown;
+}
