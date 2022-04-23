@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Codo a Codo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Desactivado</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!--cards-->
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img src="html-logo.webp" class="card-img-top" alt="12">
+                    <div class="card-body">
+                        <p class="card-text">
+                        <h5>HTML</h5>
+                        Unidad 1 <br>
+                        Unidad 2
+                        </p>
+                        <p>Ultima actualización xx-xx-xxxx</p> <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="css-logo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">
+                        <h5>CSS</h5>
+                        Unidad 1 <br>
+                        Unidad 2 <br>
+                        Unidad 3
+                        </p>
+                        <p>Ultima actualización xx-xx-xxxx</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="bts.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">
+                        <h5>Bootstrap</h5>
+                        Actividad practica obligatoria <br>
+                        Trabajo practico integrador
+                        </p>
+                        <p>Ultima actualización xx-xx-xxxx</p> <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--login-->
+        <br>
+        <section class="container-fluid">
+            <div class="row">
+                <!--email-->
+                <label for="validationCustomEmail" class="form-label">Email</label>
+                <div class="input-group has-validation">
+                    <input type="text" class="form-control" id="validationCustomEmail">
+                    <div class="invalid-feedback">
+                        Por favor escriba su Email.
+                    </div>
+                </div>
+            </div>
+            <!--contraseña-->
+            <label for="validationCustom03" class="form-label">Contraseña</label>
+            <input type="contraseña" class="form-control" id="validartionCustomPassword">
+            </div>
+            <!--check-->
+            <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                <input type="checkbox" class="mail-group-checkbox"> <a>Verificar</a>
+                <span></span>
+            </label>
+            </div>
+            </div>
+            <div class="col-12- mt-2">
+                <button class="btn btn-primary" type="submit" onclick="javascript:alert('hola')">
+                    Enviar
+                </button>
+            </div>
+            </form>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
