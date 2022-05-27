@@ -95,9 +95,9 @@
                 <div class="col-md-6">
                     <label for="exampleFormControlInput1" class="form-label">Categoría</label>
                     <select class="form-select" id="categoria" aria-label="Default select example">
-                        <option selected value="1">Estudiante</option>
-                        <option value="2">Trainee</option>
-                        <option value="3">Junior</option>
+                        <option selected value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
                     </select>
                 </div>
             </div>
@@ -105,15 +105,15 @@
 
 
             <br>
-            <div class="alert alert-primary" role="alert">
-                Total a pagar: $
+            <div class="alert alert-primary" id="total" style="display:none;" role="alert">
+                
             </div>
             <div class="row">
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn text-white" style="background-color: #96C93E;" type="button">Borrar</button>
+                    <button class="btn text-white" style="background-color: #96C93E;" onclick="borrar()" type="button">Borrar</button>
                 </div>
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <button input id="clickMe" value="clickme" onclick="doFunction();" type="button" class="btn text-white" style="background-color: #96C93E;"
+                    <button input id="clickMe" value="clickme" onclick="calcular()" type="button" class="btn text-white" style="background-color: #96C93E;"
                         data-bs-toggle="button">Resumen</button>
                 </div>
             </div>

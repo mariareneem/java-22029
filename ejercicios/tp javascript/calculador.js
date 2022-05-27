@@ -1,19 +1,25 @@
-function calcular(){
-    //Obtienes el valor
-    let valor = document.getElementById("valor").value;
-  
-    let result= document.getElementById('result');
-    let total= document.getElementById('total');
-    let categoriaSeleccionada = document.getElementById('categoria')
-    //le descuentas el 8% y lo agregas al HTML
-    var descuentoEstudiante = parseInt(valor)*0.80;
-    var descuentoTrainee = parseInt(valor)*0.50;
-    var descuentoJunior = parseInt(valor)*0.15;
-  
-    //agrega los resultados al DOM
-    result.innerHTML = 'Ahorro de: $' + descuentoEstudiante;
-    total.innerHTML =  'Total:     $' + (parseInt(valor)-descuento);
+function calcular() {
+  let valor = 200
+  let cantidad = document.getElementById('cantidad').value
+  let categoriaSeleccionada = document.getElementById('categoria').value
+  let precioTotal = 0
+
+  if (categoriaSeleccionada == 'estudiante') {
+    precioTotal = (valor - valor * 0.80) * cantidad
+  }
+  else if (categoriaSeleccionada == 'trainee') {
+    precioTotal = (valor - valor * 0.50) * cantidad
+  }
+  else if (categoriaSeleccionada == 'junior') {
+    precioTotal = (valor - valor * 0.15) * cantidad
   }
 
-  document.getElementById("clickMe").onclick = function () { alert('hello!'); };
+  document.getElementById("total").innerHTML = "Total a Pagar: $ " + precioTotal
+  document.getElementById("total").style.display = "block";
+}
+ function borrar() {
+  document.getElementById("total").style.display = "none";
+ }
+
+
 
